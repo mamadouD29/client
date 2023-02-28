@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  gap: 2em;
+  background: rgb(44, 73, 234);
+  justify-content: space-between;
+  padding: 0 .5em;
+  overflow-x: auto;
+}
+nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+nav ul {
+  place-items: center stretch;
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+nav a:hover {
+  background: rgb(13, 47, 237);
+}   
+
+.post_wrapper {
+  padding: 1em;
+}
+
+.post_content {
+  box-shadow: 2px 2px 3px rgb(13, 47, 237), -2px -2px 2px rgb(142, 153, 216);
+  margin: 1em 0;
+  padding: 1em ;
+  border-radius: 10px;
+}
+
+.answer_action {
+  padding: 1em 0;
+  text-align: end;
+}
+
+
+
+@media(min-width: 800px){
+  .post_wrapper {
+    width: 50%;
+    margin: 0 auto;
+
+  }
+}
